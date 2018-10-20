@@ -29,7 +29,7 @@
                             <div class="text-lg-right">
                                 <div class="options">
                                     <a href="#" v-on:click="openEditModal(quote)">Edit</a> -
-                                    <a href="#" v-on:click="deleteQuote(quote)">Delete</a>
+                                    <a href="#" v-on:click="confirmDeleteQuote(quote)">Delete</a>
                                 </div>
                             </div>
                         </div>

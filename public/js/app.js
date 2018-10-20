@@ -63,7 +63,14 @@ var app = new Vue({
                 alertify.alert("The quote has been updated!");
             });
         },
+        confirmDeleteQuote: function(quote) {
+            let hoy = this;
+            alertify.confirm('Are you sure you want to delete this quote?').set('onok', function() {
+                hoy.deleteQuote(quote);
+            });
+        },
         deleteQuote: function(quote) {
+            console.log(quote);
             axios.delete(`${urlQuotes}/${quote.id}`).then(response => {
                 let index = this.quotes.indexOf(quote);
                 this.quotes.splice(index, 1);
