@@ -1,5 +1,5 @@
-var urlQuotes = 'http://localhost:8000/api/quotes';
-var urlAuthors = 'http://localhost:8000/api/authors';
+var urlQuotes = url + '/api/quotes';
+var urlAuthors = url + '/api/authors';
 
 var app = new Vue({
     el: '#app',
