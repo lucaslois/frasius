@@ -25,7 +25,7 @@
                     <transition-group name="list" tag="div">
                         <div class="quote" v-bind:key="quote" v-for="quote in quotes">
                             <p class="text">@{{ quote.text }}</p>
-                            <p class="extra">— @{{ quote.source }}, @{{ quote.author }}</p>
+                            <p class="extra">—  @{{ quote.author }}, @{{ quote.source }}</p>
                             <div class="text-lg-right">
                                 <div class="options">
                                     <a href="#" v-on:click="openEditModal(quote)">Edit</a> -
@@ -106,6 +106,8 @@
         </div>
 
     </div>
+
+    <p class="text-center footer">DEVELOPED BY LUCAS LOIS</p>
 </body>
 
 <script>
