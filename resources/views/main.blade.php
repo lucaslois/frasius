@@ -28,8 +28,8 @@
                             <p class="extra">— @{{ quote.source }}, @{{ quote.author }}</p>
                             <div class="text-lg-right">
                                 <div class="options">
-                                    <a href="#" v-on:click="openEditModal(quote)">Editar</a>,
-                                    <a href="#" v-on:click="deleteQuote(quote)">Borrar</a>
+                                    <a href="#" v-on:click="openEditModal(quote)">Edit</a> - s
+                                    <a href="#" v-on:click="deleteQuote(quote)">Delete</a>
                                 </div>
                             </div>
                         </div>
