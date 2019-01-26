@@ -13,5 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('/quotes','QuoteController');
+Route::apiResource('/quotes','QuoteController');
 Route::get('/authors', 'QuoteController@authors');
